@@ -39,7 +39,6 @@ void AVLAgaci::postOrder() {
 //icinde bulunan kuyrugun noktalarinin orijine olan uzakliklarini yazdirir. 
 void AVLAgaci::postOrder(AgacDugum* aktif) 
 {
-    DogruKuyrugu* k = new DogruKuyrugu();
 	if (aktif) {
         postOrder(aktif->sol);
         postOrder(aktif->sag);
